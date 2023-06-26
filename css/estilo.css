@@ -4,26 +4,16 @@
 	font-weight: 100;
 	scroll-behavior: smooth;
 }
-/* EJEMPLO PREENTREGA */
+/*EJEMPLO PREENTREGA
 
 body{
 	font-family: 'Wix Madefor Display', sans-serif;
-	background-color: #e0dbd3cb;
+	background-color: #d8dacecb;
 }
+*/
 
-h1{
-	font-size: 24px;
-	color: #000000;
-}
 
-p {
-	font-family: Oswald , sans-serif;
-	font-size: 16px;
-	line-height: 1.5;
-	color: #666;
-}
-
-a {
+.mainmenu__inicio {
 	color: #000000;
 	font-family: 'Inter', sans-serif;
 	font-weight: 500;
@@ -33,13 +23,13 @@ a {
 	padding: 20px;
 }
 
-a:hover {
+.mainmenu__inicio:hover {
 	transition: color 0.3s ease-in-out;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 	color: #ff0000;
 }
 
-#logo {
+.img-responsive{
 	width:150px;
 	height: 150px;
 
@@ -52,7 +42,7 @@ a:hover {
 	align-items: center;
 	justify-content: center;
 	position: relative;
-	background-color: #70757a;
+	background-color: #e8ebee;
 	width: 100%;
 	padding: 10px;
 }
@@ -60,12 +50,12 @@ a:hover {
 
 
 .mainmenu__inicio{
-	width: 120px;
-	height: 120px;
-	background-color: #c5baba;
-	border: 1px solid #968f8f;
-	margin: 20px;
-	padding: 20px;
+	width: 105px;
+	height: 100px;
+	background-color: #f1f1f1;
+	border: 1px solid #fdfdfd;
+	margin: 5px;
+	padding: 2px;
 	box-sizing: border-box;
 	display: flex;
 	align-items: center;
@@ -77,4 +67,4 @@ a:hover {
 	list-style: none;
 }
 
-
+*/
