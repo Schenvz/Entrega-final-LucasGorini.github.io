@@ -6,28 +6,47 @@
     <title>Criptomonedas</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/estilo.css">
     <link rel="icon" href="../img/btc3.ico">
 </head>
 
 <body>
-                    <!-- Inicio del encabezado -->
-                    <header class="navbar">
-                        <!-- Logo -->
-                        <img class="rounded-circle" src="../img/btc1.jpg" alt="logo_sitio" width="125" height="125">
-                        <!-- Fin del logo -->
-                        <div class="sticky-top"><h1>Finanzas 2GO</h1></div>
-        <nav>
-            <ul class="menu">
-                    <li><a href="index.html" class="mainmenu__inicio"> Panel general de finanzas</a></li>
-                    <li><a href="crypto__final.html" class="mainmenu__inicio">Criptomonedas</a></li>
-                    <li><a href="nft__final.html" class="mainmenu__inicio">NFT</a></li>
-                    <li><a href="contacto__final.html" class="mainmenu__inicio"> ¡Contactanos!</a></li>
-                    <li><a href="portafolio__final.html" class="mainmenu__inicio"> Ingresar a mi portafolio</a></li>
-            </ul>
-        </nav>
+        <!-- Inicio del encabezado -->
+        <header class="navbar">
+            <!-- Logo -->
+            <img class="rounded-circle" src="../img/btc1.jpg" alt="logo_sitio" width="125" height="125">
+            <!-- Fin del logo -->
+            <div class="sticky-top"><h1 class="d-inline p-2 bg-dark text-white">Finanzas 2GO</h1></div>
 
-	</header>
+            
+        <nav class="navbar sticky-top navbar-light bg-light">
+                    <a class="navbar-brand" href="#">Menú</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="bi bi-list-nested"></span>
+                    </button>
+                        
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">IR AL INICIO <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="crypto__final.html">Criptomonedas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nft__final.html">NFT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto__final.html">¡Contactanos!</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portafolio__final.html">Ingresar a mi portafolio</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
     <div class="container p-3 my-3 bg-primary text-white">
         <h1 class="text-white">Bienvenido a tu página favorita acerca de finanzas</h1>
@@ -37,12 +56,16 @@
 <div class="container-sm border bg-success">¿Qué son las criptomonedas Y en qué nos afectan en nuestra cotidianidad?</div>
 	<!-- Fin del encabezado -->
 
+    <a href="#" class="boton-top"><i class="fa-sharp fa-solid fa-arrow-up fa-bounce"></i>
+    </a>
+
     <div class="container-sm mb-auto border">
         <section>
             <!-- Título del primer artículo -->
             <h2>¿Qué es ETH?</h2>
             <article>
-                <>Ethereum (ETH) es una plataforma blockchain que permite la creación y ejecución de contratos inteligentes y aplicaciones descentralizadas. Desde su lanzamiento en 2015, Ethereum se ha convertido en una fuerza líder en el mundo de las criptomonedas.
+                <p>Ethereum (ETH) es una plataforma blockchain que permite la creación y ejecución de contratos inteligentes y aplicaciones descentralizadas. Desde su lanzamiento en 2015, Ethereum se ha convertido en una fuerza líder en el mundo de las criptomonedas.
+                </p>
                 <p>A diferencia de Bitcoin, Ethereum no se limita a ser solo una criptomoneda. Su objetivo principal es proporcionar una plataforma para la construcción de aplicaciones descentralizadas, conocidas como dApps. Estas aplicaciones pueden tener una amplia gama de casos de uso, desde finanzas descentralizadas hasta juegos y mercado de tokens.
                 </p>
                 <p>La criptomoneda nativa de Ethereum, Ether (ETH), se utiliza como combustible para ejecutar operaciones en la red y recompensar a los mineros. Además, ETH se ha convertido en una inversión atractiva, con su valor experimentando un crecimiento significativo en los últimos años.
@@ -91,27 +114,22 @@
             <footer class="py-3 my-4">
                 <ul class="nav justify-content-center border-bottom pb-3 mb-3">
                     <li class="nav-item">
-                        <a href="#top" class="nav-link px-2 text-body-secondary">
-                        Ir al inicio
-                        </a></li>
-                    <li class="nav-item">
-                        <a href="crypto__final.html" class="nav-link px-2 text-body-secondary">
-                        Revisar Criptomonedas
+                        <a href="index.html" class="nav-link px-2 text-body-secondary">
+                            <button type="button" class="btn btn-outline-primary">Ir al inicio</button>
                         </a></li>
                     <li class="nav-item">
                         <a href="contacto__final.html" class="nav-link px-2 text-body-secondary">
-                        ¿Querés contactarnos?
+                            <button type="button" class="btn btn-outline-primary">Contacto</button>
                         </a></li>
                     <li class="nav-item">
                         <a href="portafolio__final.html" class="nav-link px-2 text-body-secondary">
-                        Ir a tu portfolio
+                            <button type="button" class="btn btn-outline-primary">Portafolio</button>
                         </a></li>
                     <li class="nav-item">
                         <a href="nft__final.html" class="nav-link px-2 text-body-secondary">
-                        NFT
+                            <button type="button" class="btn btn-outline-primary">NFT</button>
                         </a></li>
-            </ul>
-
+                </ul>
             <p class="text-center text-body-secondary"> Finargy.com</p>
             <p class="text-center text-body-secondary text-black-50"> 2023</p>
             <!--<p>Visualizar el top 10 de criptomonedas del día de hoy:</p>
