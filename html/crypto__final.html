@@ -5,66 +5,65 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Criptomonedas</title>
     <meta name="description" content="Bienvenidos a Finargy. Tu página favorita sobre finanzas del país...">
-    <meta name="keywords" content="finanzas, Argentina, economía">
+    <meta name="keywords" content="finanzas, Argentina, economía, criptoactivo,criptomonedas">
     <meta name="author" content="Schenvz, ARbiop">
     <meta name="robots" content="index, follow">
     <meta name="geo.region" content="AR">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<link rel="stylesheet" href="../css/estilos.css">
-    <link rel="icon" href="../img/btc3.ico">
+	<link rel="stylesheet" href="/css/estilos.css">
+    <link rel="icon" href="/img/btc3.ico">
 </head>
 <body>
-        <!-- Inicio del encabezado -->
-        <header class="navbar">
-            <!-- Logo -->
-            <img class="rounded-circle" src="../img/btc3.ico" alt="logo_sitio" width="125" height="125">
-            <!-- Fin del logo -->
-            <div class="sticky-top" id="#" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000"><h1 class="d-inline p-2 bg-dark text-white">Finanzas 2GO</h1></div>
-            <!-- Fin del título -->
-                <!-- Inicio navBar -->
-                <nav class="navbar sticky-top navbar-light bg-light">
-                    <a class="navbar-brand" href="#">Menú</a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="bi bi-list-nested"></span>
-                    </button>          
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="../index.html">IR AL INICIO <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../html/crypto__final.html">Criptomonedas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../html/nft__final.html">NFT</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../html/contacto__final.html">¡Contactanos!</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../html/portafolio__final.html">Ingresar a mi portafolio</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <!-- Final navBar -->
-    </header>
-    </header>
-    <div class="container p-3 my-3 bg-primary text-white">
-        <h1 class="text-white" data-aos="zoom-in-right">Bienvenido a tu página favorita acerca de finanzas</h1>
-            <p data-aos="zoom-in-right">Todas las noticias sobre macro y microeconomía, en un sólo lugar...</p>
-            <p data-aos="zoom-in-right">¡Gracias por elegirnos a diario!</p>
+<!-- Inicio del encabezado -->
+<header class="container-fluid">
+    <a href="/index.html" class="logo sticky-top" id="#" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000"><h1 class="d-inline p-2 bg-black text-white">Finanzas2GO</h1></a>
+    <div class="container d-flex align-items-center justify-content-end">
+        <button class="btn bg-white text-black btn-outline-ligth btn-l btn-lg hamburger_menu" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+        Menú <i class="fa-solid fa-bars fa-lg"></i>
+        </button>
     </div>
-	<!-- Fin del encabezado -->
-    <div class="container-sm mb-auto border">
-        <div class="col-sm container-xl mb-auto border">
+</header>
+<!-- Offcavas inicio -->
+<div class="container-fluid d-flex flex-row-reverse">
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header justify-content-end">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <!-- Logo -->
+            <img class="rounded-circle" src="/img/btc3.ico"  id="logo" alt="logo_sitio" width="125" height="125">
+            <!-- Fin del logo -->
+            <ul class="menu">
+                <li><a href="index.html" class="menu_color">Inicio</a></li>
+                <li><a href="/html/crypto__final.html" class="menu_color">Criptomonedas</a></li>
+                <li><a href="/html/nft__final.html" class="menu_color">NFT</a></li>
+                <li><a href="/html/contacto__final.html" class="menu_color">¡Contacto!</a></li>
+                <li><a href="/html/portafolio__final.html" class="menu_color">Tú portafolio</a></li>
+            </ul>
+        </div>
+        <p class="text-center text-body-secondary">Made with ❤ in Argentina</p>
+    </div>
+</div>
+<!-- Offcavas fin -->
+<!-- Fin del encabezado -->
+    <!-- Presentación de la página -->
+    <div class="container p-3 my-3 bg-primary text-white">
+        <h1 class="text-white text-center">Bienvenido a tu página favorita acerca de finanzas</h1>
+            <p class="text-center">Todas las noticias sobre macro y microeconomía, en un sólo lugar...</p>
+            <p class="text-center">¡Gracias por elegirnos a diario!</p>
+</div>
+<!--botónup-->
+<a href="#" class="boton-top"><i class="fa-sharp fa-solid fa-arrow-up fa-bounce"></i></a>
+    <div class="container-sm">
+        <div class="col-sm container-xl">
             <div class="container-sm border bg-success text-white">¿Qué son las criptomonedas Y en qué nos afectan en nuestra cotidianidad?</div>
             <section>
-            <!-- Título del primer artículo -->
+            <!-- Título del artículo -->
                 <h2 class="bg-warning text-center">¿Qué es ETH?</h2>
                 <article>
                     <p>Ethereum (ETH) es una plataforma blockchain que permite la creación y ejecución de contratos inteligentes y aplicaciones descentralizadas. Desde su lanzamiento en 2015, Ethereum se ha convertido en una fuerza líder en el mundo de las criptomonedas.
@@ -82,58 +81,58 @@
             </section>
         </div>
     </div>
-    <div class="container-sm mb-5 border ">
-        <section>
-                <h6 class="bg-warning text-center">PANEL GENERAL DE Criptomonedas</h6>
-                <article> 
-                </article>
-        </section>
-    </div>
 <!-- inicio carousel-->
-    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-            <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="../img/btc3.jpg" class="d-block w-100"  width="500" height="700" alt="openai">
-                    </div>
+<div class="container">
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/img/eth4.jpg" class="d-block w-100" alt="bitcoin_future" width="100%">
+            </div>
             <div class="carousel-item">
-                        <img src="../img/btc6.jpg" class="d-block w-100" width="500" height="700" alt="BTC5">
+                <img src="/img/eth2.jpg" class="d-block w-100" alt="ethereuminspace" width="100%">
             </div>
-                <div class="carousel-item">
-                        <img src="../img/eth3.jpg" class="d-block w-100" width="500" height="700" alt="eth3d">
+            <div class="carousel-item">
+                <img src="/img/eth3.jpg" class="d-block w-100" alt="ethereumrender" width="100%">
             </div>
-                </div>
-                        <button class="carousel-control-prev" type="button" data-target="#carouselExampleFade" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Anterior</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-target="#carouselExampleFade" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Siguiente</span>
-                            </button>
+        </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+        </button>
     </div>
+</div>
 <!--fin carousel-->
 <!-- Inicio footer -->
 <div class="container">
-    <footer class="py-3 my-4">
-        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+    <footer class="py-3 my-4" id="footer__final">
+        <ul class="nav justify-content-center border-bottom pb-md-1 mb-md-4">
             <li class="nav-item">
-                <a href="../index.html" class="nav-link px-2 text-body-secondary">
+                <a href="/index.html" class="nav-link px-2 text-body-secondary">
                     <button type="button" class="btn btn-outline-primary">Ir al inicio</button>
                 </a></li>
             <li class="nav-item">
-                <a href="./contacto__final.html" class="nav-link px-2 text-body-secondary">
+                <a href="/html/contacto__final.html" class="nav-link px-2 text-body-secondary">
                     <button type="button" class="btn btn-outline-primary">Contacto</button>
                 </a></li>
             <li class="nav-item">
-                <a href="./portafolio__final.html" class="nav-link px-2 text-body-secondary">
+                <a href="/html/portafolio__final.html" class="nav-link px-2 text-body-secondary">
                     <button type="button" class="btn btn-outline-primary">Portafolio</button>
                 </a></li>
             <li class="nav-item">
-                <a href="./crypto__final.html" class="nav-link px-2 text-body-secondary">
-                        <button type="button" class="btn btn-outline-primary">Criptomonedas</button>
+                <a href="/html/crypto__final.html" class="nav-link px-2 text-body-secondary">
+                    <button type="button" class="btn btn-outline-primary">Criptomonedas</button>
                 </a></li>
             <li class="nav-item">
-                <a href="./nft__final.html" class="nav-link px-2 text-body-secondary">
+                <a href="/html/nft__final.html" class="nav-link px-2 text-body-secondary">
                     <button type="button" class="btn btn-outline-primary">NFT</button>
                 </a></li>
         </ul>
@@ -152,6 +151,6 @@
 
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
