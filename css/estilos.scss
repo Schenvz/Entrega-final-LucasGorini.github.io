@@ -6,15 +6,16 @@
 }
 //Variables de fuente
 $base-font-size:18px;
+$big-font-size:30px;
 //variables de color
 $bg-color-a:red;
 $bg-color-b:green;
-$color-gradient: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
 $color-gradient-b: linear-gradient(to top, #ffb347, #ffcc33);
 $color-gradient-c: linear-gradient(to bottom, #8e9eab, #eef2f3);
 $color-gradient-d: linear-gradient(to top, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
 //bs color
-$blue:    #8e9eab;
+$white:   #ffffff;
+$blue:    #0d6efd;
 $indigo:  #6610f2;
 $purple:  #6f42c1;
 $pink:    #d63384;
@@ -38,6 +39,8 @@ $dark:          $color-gradient-b;
 body {
 	font-size: $base-font-size;
 	background: $color-gradient-d;
+	position: relative;
+    min-height: 100vh;
 
 	a {
 		padding: 0;
@@ -76,6 +79,90 @@ body {
 		}
 	}
 }
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    z-index: 90;
+}
+
+.logo {
+    font-size: 40px;
+    font-weight: 700;
+    color: #000000;
+    text-decoration: none;
+    transition: 1s;
+}
+
+	.logo:hover {
+    color: #000000;
+    transition: 1s;
+	}
+	/* sm se aplica a dispositivos x-small (teléfonos verticales, menos de 576px)*/
+	@media screen and (max-width: 575.98px) {
+	.logo {
+			font-size: 20px;
+			font-weight: 700;
+			color: #ffffff;
+			text-decoration: none;
+			transition: 2s;
+		}
+	}
+	/* Dispositivos pequeños (teléfonos horizontales, 576px y más)*/
+	@media (min-width: 576px) {
+	.logo {
+	
+			font-size: 25px;
+			font-weight: 700;
+			color: #ffffff;
+			text-decoration: none;
+			transition: 2s;
+		}
+	}
+	/* Dispositivos XX-Large (escritorios más grandes, 1400px y más)*/
+	@media (min-width: 1400px) {
+	.logo {
+			font-size: 45px;
+			font-weight: 700;
+			color: #ffffff;
+			text-decoration: none;
+			transition: 2s;
+		}
+	}
+
+.hamburger_menu {
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.offcanvas {
+    background-color: $secondary;
+}
+
+.offcanvas-body {
+    background-color: $secondary;
+}
+
+.menu li a {
+    color: $blue;
+    text-decoration: none;
+    font-size: $big-font-size;
+}
+
+.menu li a:hover {
+    color: $white;
+    background-color: $blue;
+    transition: 0.5s;
+}
+
+
 
 
 // sass --watch css/estilos.scss css/estilos.css (LA QUE ANDA)
