@@ -27,7 +27,7 @@ body .boton-top {
   line-height: 63px;
   bottom: 25px;
   right: 25px;
-  color: #FFF;
+  color: #fff;
   border-radius: 50px;
   text-align: center;
   font-size: 35px;
@@ -126,4 +126,4 @@ header {
   color: #ffffff;
   background-color: #0d6efd;
   transition: 0.5s;
-}/*# sourceMappingURL=estilos.css.map */
+} /*# sourceMappingURL=estilos.css.map */
